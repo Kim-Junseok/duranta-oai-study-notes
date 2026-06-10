@@ -1,0 +1,44 @@
+# Ubuntu apt packages for reading/building Duranta OAI without SDR hardware.
+# Install with:
+#   sudo apt-get update
+#   sudo apt-get install -y $(grep -vE "^\s*(#|$)" requirements.txt)
+
+build-essential
+cmake
+ninja-build
+git
+pkg-config
+ccache
+
+# Autotools / ASN.1 compiler build support
+autoconf
+automake
+autotools-dev
+libtool
+m4
+bison
+flex
+libfl-dev
+
+# OAI common C/C++ dependencies
+libsctp-dev
+libsimde-dev
+libconfig-dev
+libcap-dev
+libssl-dev
+libyaml-cpp-dev
+zlib1g-dev
+libreadline-dev
+libncurses-dev
+libpcre2-dev
+
+# Python helpers used by OAI build/test utilities
+python3
+python3-dev
+python3-pip
+python3-mako
+python3-numpy
+python3-requests
+python3-scipy
+python3-setuptools
+python3-ruamel.yaml
