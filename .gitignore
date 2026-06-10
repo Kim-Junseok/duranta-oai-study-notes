@@ -4,13 +4,6 @@
 *.tmp
 *.log
 
-# Local exports and generated artifacts
-exports/
-build/
-dist/
-templates/
-notes/daily/
-
 # Editor metadata
 .idea/
 .vscode/
